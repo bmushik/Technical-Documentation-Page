@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Quick Python Tutorial</header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li><a class="nav-link" href="#data_types">Data Types</a>
+        </li>
+        <li><a class="nav-link" href="#data_storage">Data Storage</a>
+        </li>
+        <li><a class="nav-link" href="#condition_&_loops">Condition & Loops</a>
+        </li>
+        <li><a class="nav-link" href="#functions">Functions</a>
+        </li>
+      </ul>
+      <div>
+        <a href="https://www.w3schools.com">Reference</a>
+      </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+          <p><br>It is used for:</p>
+          <li>web development (server-side),</li>
+          <li>software development,</li>
+          <li>mathematics,</li>
+          <li>system scripting.</li>
+          <p><br>What can Python do?</p>
+          <li>Python can be used on a server to create web applications.</li>
+          <li>Python can be used alongside software to create workflows.</li>
+          <li>Python can connect to database systems. It can also read and modify files.</li>
+          <li>Python can be used to handle big data and perform complex mathematics.</li>
+          <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+        </section>
+        <section class="main-section" id="data_types">
+          <header>Data Types</header>
+          <p>In programming, data type is an important concept.<br>Variables can store data of different types, and different types can do different things.<br>Python has the following data types built-in by default, in these categories:</p>
+          <table>
+            <thead>
+              <tr><br>
+                <caption>Python Data Types</caption>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Text Type:</td>
+                <td>str</td>
+              </tr>
+              <tr>
+                <td>Numeric Types:</td>
+                <td>int, float, complex</td>
+              </tr>
+              <tr>
+                <td>Sequence Types:</td>
+                <td>list, tuple, range</td>
+              </tr>
+              <tr>
+                <td>Mapping Type:</td>
+                <td>dict</td>
+              </tr>
+              <tr>
+                <td>Set Types:</td>
+                <td>set, frozenset</td>
+              </tr>
+              <tr>
+                <td>Boolean Type:</td>
+                <td>bool</td>
+              </tr>
+              <tr>
+                <td>Binary Types:</td>
+                <td>bytes, bytearray, memoryview</td>
+              </tr>
+              <tr>
+                <td>None Type:</td>
+                <td>NoneType</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="main-section" id="data_storage">
+          <header>Data Storage</header>
+          <p>There are 4 built-in data types in Python used to store collections of data, these 4 are List, Tuple, Set, and Dictionary, all with different qualities and usage.</p>
+          <p><br><em><strong>List</strong></em></p>
+          <p>Lists are used to store multiple items in a single variable.
+            Lists are created using square brackets:</p>
+          <code>thislist = ["apple", "banana", "cherry"]
+            print(thislist)</code>
+          <p><em><strong>Tuple</strong></em></p>
+          <p>Tuples are used to store multiple items in a single variable.
+            A tuple is a collection which is ordered and unchangeable.
+            Tuples are written with round brackets:</p>
+          <code>thistuple = ("apple", "banana", "cherry")
+            print(thistuple)</code>
+          <p><em><strong>Set</strong></em></p>
+          <p>Sets are used to store multiple items in a single variable.
+            A set is a collection which is unordered, unchangeable*, and unindexed.<br>* Note: Set items are unchangeable, but you can remove items and add new items. <br>Sets are written with curly brackets:</p>
+          <code>thisset = {"apple", "banana", "cherry"}
+            print(thisset)</code>
+          <p><em><strong>Dictionary</strong></em></p>
+          <p>Dictionaries are used to store data values in key:value pairs.
+            A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+            Dictionaries are written with curly brackets, and have keys and values:</p>
+          <code>thisdict = {
+            &nbsp; "brand": "Ford",
+            &nbsp; "model": "Mustang",
+            &nbsp; "year": 1964
+            }
+            print(thisdict)</code>
+        </section>
+        <section class="main-section" id="condition_&_loops">
+          <header>Condition & Loops</header>
+          <p><br><em><strong>Conditions and If statements</strong></em></p>
+          <p>Python supports the usual logical conditions from mathematics:</p>
+          <article>Equals: a == b
+            Not Equals: a != b
+            Less than: a < b
+            Less than or equal to: a <= b
+            Greater than: a > b
+            Greater than or equal to: a >= b
+          </article>
+          <p>These conditions can be used in several ways, most commonly in "if statements" and loops.
+            An "if statement" is written by using the if keyword:</p>
+          <code>a = 33
+            b = 200
+            if b > a:
+            &nbsp; print("b is greater than a")</code>
+          <p><em><strong>The while Loop</strong></em></p>
+          <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+          <p>Print i as long as i is less than 6:</p>
+          <code>i = 1
+            while i < 6:
+            &nbsp; print(i)
+            &nbsp; i += 1</code>
+          <p><em><strong>For Loops</strong></em></p>
+          <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+            This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+            With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+          <p>Print each fruit in a fruit list:</p>
+          <code>fruits = ["apple", "banana", "cherry"]
+            for x in fruits:
+            &nbsp; print(x)</code>
+          </section>
+        <section class="main-section" id="functions">
+          <header>Functions</header>
+          <p>A function is a block of code which only runs when it is called.
+            You can pass data, known as parameters, into a function. 
+            A function can return data as a result.</p>
+          <p><br><em><strong>Creating a Function</strong></em></p>
+          <p>In Python a function is defined using the def keyword:</p>
+          <code>def my_function():
+            &nbsp; print("Hello from a function")</code>
+          <p><br><em><strong>Calling a Function</strong></em></p>
+          <p>To call a function, use the function name followed by parenthesis:</p>
+          <code>def my_function():
+            &nbsp; print("Hello from a function")
+            my_function()</code>
+            </section>
+    </main>
+  </body>
+  <footer>
+    <p>You can read full article at <a href="https://www.w3schools.com/python/default.asp">w3schools</a>.</p>
+  </footer>
+</html>
