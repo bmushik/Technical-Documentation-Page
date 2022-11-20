@@ -1,0 +1,166 @@
+* {
+  margin:0;
+  padding:0;
+  font-family:Candara;
+  font-size:calc(12px + 0.5vw);
+  
+}
+
+body {
+  display:block;
+  background-color:#EAE3E8;
+}
+
+caption, td, code, article {
+  font-family:Tahoma;
+  font-size:calc(11px + 0.5vw);
+}
+
+table, caption {
+  border: 2px solid #7E6576;
+  border-radius:10px;
+}
+
+td, caption {
+  padding: 8px;
+  border-bottom: none;
+  background-color:#CDC1C9;
+}
+
+td:hover, td:hover + td {
+  background-color:#7E6576;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 1.6;
+    background-color: #CDC1C9;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#navbar {
+  position:fixed;
+  padding-top: 1px;
+  height:100%;
+  width:20vw;
+  border-right: 2px solid #705066;
+}
+
+nav header, nav li, div {
+  padding: 0.8vw;
+  border-bottom: 2px solid #705066;
+}
+
+nav header, div {
+  text-align:center;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li a:hover {
+  color:#7E6576;
+}
+
+footer a:hover {
+  color:#CDC1C9;
+}
+
+#main-doc {
+  position:absolute;
+  margin-left:21vw;
+  padding: 1vw;
+  max-width:76vw;
+  width:100%;
+}
+
+header {
+  padding:9px 0;
+  font-size:calc(13px + 0.8vw);
+  color: #7E6576;
+}
+
+main header {
+  font-weight:bold;
+}
+
+main p {
+  padding-left:10px;
+}
+
+main li {
+  padding-left:18px;
+  list-style-type:circle;
+}
+
+article {
+  text-align: left;
+  white-space: pre-line;
+  padding:8px;
+  border: 1px solid #7E6576;
+  border-radius: 10px;
+}
+
+article:hover {
+  background-color:#CDC1C9;
+}
+
+footer {
+  display:none;
+  visibility:hidden;
+}
+
+@media (max-width:800px) {
+  #navbar {
+    position:fixed;
+    top: 0;
+    min-height:20px;
+    max-height:40px;
+    width:100%;
+    z-index:1;
+    background-color:#CDC1C9;
+  }
+  div {
+    display: none;
+    visibility: hidden;
+  }
+  nav header, nav li {
+    color:#7E6576;
+    border: none;
+    list-style-type:none;
+  }
+  ul {
+    background-color:#CDC1C9;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    
+  }
+  #main-doc {
+    position:relative;
+    margin: auto;
+    max-width:90vw;
+    width:100%;
+  }
+  main header {
+    padding-top: 75px;
+  }
+  footer {
+    display:block;
+    visibility: visible;
+    text-align:center;
+    padding: 10px;
+    height: 20px;
+    width:100%;
+    background-color:#7E6576;
+  }
+}
